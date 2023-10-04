@@ -148,6 +148,15 @@ p {
     flex-wrap: wrap;
     margin-top: 100px;
 }
+
+.gallerydouble {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    min-width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
 .galleryitem {
     flex: 1;
     display: grid;

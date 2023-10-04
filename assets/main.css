@@ -1,0 +1,258 @@
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 300;
+    color: aliceblue;
+    background-color: rgb(16, 16, 20);
+    margin: 0;
+}
+
+h1 {
+    padding: 0 20px;
+}
+
+p {
+    font-size: 20px;
+}
+.container {
+    max-width: 1600px;
+    min-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(16, 16, 20, 0.8);
+    z-index: 1000;
+}
+.navcontent {
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    align-items: baseline;
+    padding: 5px 20px 10px;
+}
+
+
+.logo {
+    font-size: 36px;
+    font-weight: 300;
+    flex-grow: 1;
+}
+
+.logo a {
+    color: aliceblue;
+    text-decoration: none;
+}
+.boldtxt {
+    font-weight: 600;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+.heroimg {
+    margin: 0 auto;
+    max-width: 1100px;
+    transform: translateY(-60px);
+}
+.heroimg img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.herotxt {
+    margin: 0 10px;
+    align-self: center;
+    text-align: left;
+    transform: translateY(-60px);
+}
+.herotxt h1 {
+    font-size: 40px;
+    margin: 0px;
+}
+.herotxt p {
+    font-size: 30px;
+    margin: 0;
+}
+.herotxt button {
+    background-color: aliceblue;
+    color: rgb(16, 16, 20);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+#fauxstart {
+    padding-top: 60px;
+}
+
+#start {
+    text-align: center;
+}
+.centerblock {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto 50px;
+    text-align: left;
+    padding: 0 20px;
+}
+.subblock {
+    flex: 1;
+    width: 50%;
+}
+
+.subblock img {
+    max-width: 100%;
+}
+
+.subblock p {
+    padding: 0 20px;
+}
+
+.subtext {
+    margin: auto;
+}
+
+.subtext p {
+    max-width: 550PX;
+}
+
+.subtextright {
+    text-align: right;
+    margin: auto;
+}
+
+.subtextright p {
+    max-width: 550PX;
+    float: right;
+}
+
+.media {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.media img {
+    max-width: 100%;
+}
+.galleryblock {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.galleryitem {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    min-width: 50%;
+    overflow: hidden;
+}
+
+.galleryitem div {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    align-self: end;
+}
+
+.gradientdiv {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 150px;
+    background-image: linear-gradient(
+        to bottom,
+        hsla(0, 0%, 0%, 0) 0%,
+        hsla(0, 0%, 0%, 0.006) 8.1%,
+        hsla(0, 0%, 0%, 0.024) 15.5%,
+        hsla(0, 0%, 0%, 0.052) 22.5%,
+        hsla(0, 0%, 0%, 0.088) 29%,
+        hsla(0, 0%, 0%, 0.13) 35.3%,
+        hsla(0, 0%, 0%, 0.176) 41.2%,
+        hsla(0, 0%, 0%, 0.225) 47.1%,
+        hsla(0, 0%, 0%, 0.275) 52.9%,
+        hsla(0, 0%, 0%, 0.324) 58.8%,
+        hsla(0, 0%, 0%, 0.37) 64.7%,
+        hsla(0, 0%, 0%, 0.412) 71%,
+        hsla(0, 0%, 0%, 0.448) 77.5%,
+        hsla(0, 0%, 0%, 0.476) 84.5%,
+        hsla(0, 0%, 0%, 0.494) 91.9%,
+        hsla(0, 0%, 0%, 0.5) 100%
+    );
+}
+
+.galleryitem p {
+    text-align: center;
+    font-weight: 600;
+}
+
+.galleryitem img {
+    max-width: 100%;
+    margin: 5px 5px 0;
+    justify-self: center;
+}
+
+hr {
+    align: center;
+    size: 1px;
+    width: 50%;
+    color: #666;
+    margin-bottom: 80px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 200px;
+    text-align: center;
+    color: #666;
+}
+
+.footer a{
+    color: aliceblue;
+    font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .heroimg {
+        max-width: 800px;
+        transform: translateY(0);
+    }
+    .herotxt {
+        text-align: center;
+        transform: translateY(0);
+    }
+    #fauxstart {
+        flex-wrap: wrap;
+    }
+    #fauxstart .medialink {
+        max-width: 50%;
+    }
+    .centerblock {
+        display: grid;
+    }
+    .subblock {
+        width: 100%;
+    }
+    .galleryitem {
+        min-width: 100%;
+    }
+    .subtextright {
+        order: 1;
+    }
+    .galleryblock {
+        display: flex;
+    }
+  }
